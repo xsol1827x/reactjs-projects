@@ -1,0 +1,46 @@
+/*web display*/
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .nav li {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #88dfdf;
+  }
+  
+  .nav a:hover,
+  .nav a:active,
+  .nav a.active {
+    color: #e6fcfc;
+  }
+
+  .appBar{
+      background: #2E3B55;
+  }
+
+  .mobileMenu{
+    display: none;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width:720px) {
+  .nav{
+      display: none;
+  }
+
+  .mobileMenu{
+    display: inline-block;
+  }
+  }

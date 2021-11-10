@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+/*Web display*/
+.text{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.banner{
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.banner img{
+    height: 800px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    border: white solid 4px;
+    border-radius: 25px;
+    width: fit-content;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 3px 3px #029eb3;
+    box-shadow: 3px 3px #029eb3;
+}
+
+.features{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: stretch; 
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.features img{
+    height: 300px;
+    width: 300px;
+}
+
+.features li{
+    list-style: none;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+/*footer*/
+.footer{
+    background-color: azure;
+    padding-bottom: 20px;
+}
+
+.icons{
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.icons ul{
+    text-align: center;
+}
+
+.icons li{
+    display: inline-block;
+    margin: 0px 10px 0px;
+}
+
+.app{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.app p{
+    width: 50%;
+}
+
+.app img{
+    width: 150px;
+    height: 150px;
+}
+
+/*Mobile Display*/
+@media only screen and (min-width: 360px) and (max-width:480px)
+{
+    .banner img{
+        height: 200px;
+        width: fit-content;
+    }
+
+    .title{
+        font-size: 30px;
+        top: 30%;
+    }
+
+    .features{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .app{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
